@@ -32,7 +32,7 @@ class ArchaeologicalPlaceResource extends Resource
                     ->columnSpanFull(),
                 Forms\Components\FileUpload::make('image')
                     ->image()
-                    ->required(),
+                    ->nullable(),
                 Forms\Components\TextInput::make('link')
                     ->required()
                     ->maxLength(255),
@@ -49,8 +49,9 @@ class ArchaeologicalPlaceResource extends Resource
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
-                Tables\Columns\TextColumn::make('link')
-                    ->searchable(),
+                Tables\Columns\IconColumn::make('link')
+                    ->icon('heroicon-o-map')
+                    ->url(fn ($record) => $record->link, true),
                 Tables\Columns\TextColumn::make('city.name')
                     ->numeric()
                     ->sortable(),
