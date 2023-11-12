@@ -1,25 +1,20 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\Resources\CityResource\RelationManagers;
 
-use App\Filament\Resources\CityResource\Pages;
-use App\Filament\Resources\CityResource\RelationManagers;
-use App\Models\City;
 use Filament\Forms;
 use Filament\Forms\Form;
-use Filament\Resources\Resource;
+use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class CityResource extends Resource
+class ArchaeologicalPlacesRelationManager extends RelationManager
 {
-    protected static ?string $model = City::class;
+    protected static string $relationship = 'archaeologicalPlaces';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
-    public static function form(Form $form): Form
+    public function form(Form $form): Form
     {
         return $form
             ->schema([
@@ -29,18 +24,28 @@ class CityResource extends Resource
             ]);
     }
 
-    public static function table(Table $table): Table
+    public function table(Table $table): Table
     {
         return $table
+            ->recordTitleAttribute('name')
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
+                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\IconColumn::make('link')
+                    ->icon('heroicon-o-map')
+                    ->url(fn ($record) => $record->link, true),
+                Tables\Columns\TextColumn::make('city.name')
+                    ->numeric()
+                    ->sortable(),
             ])
             ->filters([
                 //
             ])
+            ->headerActions([
+                Tables\Actions\CreateAction::make(),
+            ])
             ->actions([
-                Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
@@ -52,20 +57,5 @@ class CityResource extends Resource
             ->emptyStateActions([
                 Tables\Actions\CreateAction::make(),
             ]);
-    }
-
-    public static function getPages(): array
-    {
-        return [
-            'index' => Pages\ManageCities::route('/'),
-            'view' => Pages\ViewCity::route('/{record}'),
-        ];
-    }
-
-    public static function getRelations(): array
-    {
-        return [
-            RelationManagers\ArchaeologicalPlacesRelationManager::class
-        ];
     }
 }
