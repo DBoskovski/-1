@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Skopje"
+  },
+  {
+    "id": 2,
+    "name": "Tetovo"
+  },
+  {
+    "id": 3,
+    "name": "Bitola"
+  },
+  {
+    "id": 4,
+    "name": "Kumanovo"
+  },
+  {
+    "id": 5,
+    "name": "Prilep"
+  },
+  {
+    "id": 6,
+    "name": "Ohrid"
+  },
+  {
+    "id": 7,
+    "name": "Veles"
+  },
+  {
+    "id": 8,
+    "name": "Štip"
+  },
+  {
+    "id": 9,
+    "name": "Gostivar"
+  },
+  {
+    "id": 10,
+    "name": "Kočani"
+  },
+  {
+    "id": 11,
+    "name": "Dračevo"
+  },
+  {
+    "id": 12,
+    "name": "Struga"
+  },
+  {
+    "id": 13,
+    "name": "Debar"
+  },
+  {
+    "id": 14,
+    "name": "Strumica"
+  },
+  {
+    "id": 15,
+    "name": "Vinica"
+  },
+  {
+    "id": 16,
+    "name": "Probištip"
+  },
+  {
+    "id": 17,
+    "name": "Aračinovo"
+  },
+  {
+    "id": 18,
+    "name": "Kičevo"
+  },
+  {
+    "id": 19,
+    "name": "Kavadarci"
+  },
+  {
+    "id": 20,
+    "name": "Gevgelija"
+  },
+  {
+    "id": 21,
+    "name": "Vrapčište"
+  },
+  {
+    "id": 22,
+    "name": "Radoviš"
+  },
+  {
+    "id": 23,
+    "name": "Berovo"
+  },
+  {
+    "id": 24,
+    "name": "Kruševo"
+  },
+  {
+    "id": 25,
+    "name": "Sveti Nikole"
+  },
+  {
+    "id": 26,
+    "name": "Demir Kapija"
+  },
+  {
+    "id": 27,
+    "name": "Kučevište"
+  },
+  {
+    "id": 28,
+    "name": "Delčevo"
+  },
+  {
+    "id": 29,
+    "name": "Bogdanci"
+  },
+  {
+    "id": 30,
+    "name": "Rašče"
+  },
+  {
+    "id": 31,
+    "name": "Negotino"
+  },
+  {
+    "id": 32,
+    "name": "Vevčani"
+  },
+  {
+    "id": 33,
+    "name": "Debrešte"
+  },
+  {
+    "id": 34,
+    "name": "Labuništa"
+  },
+  {
+    "id": 35,
+    "name": "Gradsko"
+  },
+  {
+    "id": 36,
+    "name": "Valandovo"
+  },
+  {
+    "id": 37,
+    "name": "Kriva Palanka"
+  },
+  {
+    "id": 38,
+    "name": "Kratovo"
+  },
+  {
+    "id": 39,
+    "name": "Krivogaštani"
+  },
+  {
+    "id": 40,
+    "name": "Zrnovci"
+  },
+  {
+    "id": 41,
+    "name": "Pehčevo"
+  },
+  {
+    "id": 42,
+    "name": "Plasnica"
+  },
+  {
+    "id": 43,
+    "name": "Mogila"
+  },
+  {
+    "id": 44,
+    "name": "Tearce"
+  },
+  {
+    "id": 45,
+    "name": "Novaci"
+  },
+  {
+    "id": 46,
+    "name": "Rosoman"
+  },
+  {
+    "id": 47,
+    "name": "Novo Selo"
+  },
+  {
+    "id": 48,
+    "name": "Bosilovo"
+  },
+  {
+    "id": 49,
+    "name": "Konče"
+  },
+  {
+    "id": 50,
+    "name": "Rostuša"
+  },
+  {
+    "id": 51,
+    "name": "Jegunovce"
+  },
+  {
+    "id": 52,
+    "name": "Rankovce"
+  },
+  {
+    "id": 53,
+    "name": "Sopište"
+  },
+  {
+    "id": 54,
+    "name": "Obleševo"
+  },
+  {
+    "id": 55,
+    "name": "Karbinci"
+  },
+  {
+    "id": 56,
+    "name": "Vasilevo"
+  },
+  {
+    "id": 57,
+    "name": "Petrovec"
+  },
+  {
+    "id": 58,
+    "name": "Makedonski Brod"
+  },
+  {
+    "id": 59,
+    "name": "Staro Nagoričane"
+  },
+  {
+    "id": 60,
+    "name": "Demir Hisar"
+  },
+  {
+    "id": 61,
+    "name": "Lozovo"
+  },
+  {
+    "id": 62,
+    "name": "Centar Župa"
+  },
+  {
+    "id": 63,
+    "name": "Brvenica"
+  },
+  {
+    "id": 64,
+    "name": "Belčišta"
+  },
+  {
+    "id": 65,
+    "name": "Dolneni"
+  },
+  {
+    "id": 66,
+    "name": "Čučer-Sandevo"
+  },
+  {
+    "id": 67,
+    "name": "Zelenikovo"
+  },
+  {
+    "id": 68,
+    "name": "Želino"
+  },
+  {
+    "id": 69,
+    "name": "Star Dojran"
+  },
+  {
+    "id": 70,
+    "name": "Studeničani"
+  },
+  {
+    "id": 71,
+    "name": "Bogovinje"
+  },
+  {
+    "id": 72,
+    "name": "Ilinden"
+  },
+  {
+    "id": 73,
+    "name": "Lipkovo"
+  },
+  {
+    "id": 74,
+    "name": "Makedonska Kamenica"
+  },
+  {
+    "id": 75,
+    "name": "Resen"
+  }
+]
